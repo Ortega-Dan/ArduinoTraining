@@ -1,23 +1,12 @@
-void setup() {
-  // Velocidad del motor M1 en un 30%
-  motorSpeed(M1, 30);
-  // Velocidad del motor M2 en un 30%
-  motorSpeed(M3, 30);
-}
+void setup() {}
 void loop() {
-  goForward(M1, M3);
 
-  delay(1000);
+  int test = ultrasoundRead(J3);
 
-  motorsOff(M1, M3);
+  if (test < 120) {
 
-  delay(1000);
-  
-  goReverse(M1, M3);
+    Serial.println(test);
+  }
 
-  delay(1000);
-
-  motorsOff(M1, M3);
-
-  delay(1000);
+  delay(30);
 }
