@@ -1,14 +1,11 @@
 #include "Arduino.h"
 
 void setup() {}
+
 void loop() {
+  ledOn();
+  delay(300);
 
-  int test = ultrasoundRead(J3);
-
-  if (test < 120) {
-    Serial.println(test);
-  }
-
-  delay(30);
-
+  ledOff();
+  delay(300);
 }
