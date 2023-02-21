@@ -1,5 +1,5 @@
 {
     "board": "arduino:avr:leonardo",
     "port": "/dev/ttyACM0",
-    "sketch": "runner.ino"
+    "sketch": "initialTester.ino"
 }
